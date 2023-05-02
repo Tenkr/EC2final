@@ -174,7 +174,8 @@ const getStudent_id = async () => {
     .then((response) => response.json())
     .then((data) => {
       console.log(data.user);
-      document.getElementById("student-task-id").innerHTML = `${data.user.lastname_en};`
+      document.getElementById("firstname-task-id").innerHTML = `${data.user.firstname_en}`
+      document.getElementById("lastname-task-id").innerHTML = `${data.user.lastname_en}`
     })
     .catch((error) => console.error(error));
 };
